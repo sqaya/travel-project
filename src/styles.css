@@ -1,7 +1,66 @@
-h1 {
+body {
   font-family: "Poppins", sans-serif;
-  font-style: normal;
+  background: rgba(194, 239, 79, 0.7);
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 280px 0;
+}
+header h1 {
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1.2;
+  margin: 30px 0;
+}
+h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 32px;
+}
+h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: white;
+  text-decoration: none;
+  color: #272044;
+  padding: 16px 32px;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 100px 0;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 15px;
+  }
+  .container {
+    max-width: 900px;
+  }
 }
