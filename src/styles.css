@@ -132,7 +132,7 @@ section.secondary-section {
   grid-gap: 64px;
 }
 .grid-2-columns {
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
 }
 .grid,
 .grid-3-columns-1-narrow {
@@ -142,9 +142,10 @@ section.secondary-section {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .img-landmark {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
+
 .text-center {
   text-align: center;
 }
@@ -152,11 +153,18 @@ section.secondary-section {
   background: white;
   margin: 30px 0;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-body {
   padding: 30px;
 }
 .card-footer {
   padding: 0 30px 30px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
 .btn {
   display: block;
@@ -192,6 +200,12 @@ section.secondary-section {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
   section {
     padding: 30px;
