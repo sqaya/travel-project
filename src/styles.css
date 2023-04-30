@@ -210,4 +210,7 @@ section.secondary-section {
   section {
     padding: 30px;
   }
+  blockquote {
+    width: 100%;
+  }
 }
